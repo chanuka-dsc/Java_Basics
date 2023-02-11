@@ -15,11 +15,21 @@ public class App {
         ducati.setSpeed(150);
         bmw.setSpeed(160);
 
-        System.out.println("Speed of the Ducati" + ducati.getSpeed());
-        System.out.println( "Speed of the BMW" + bmw.getSpeed());
+        System.out.println("Speed of the Ducati " + ducati.getSpeed());
+        System.out.println( "Speed of the BMW " + bmw.getSpeed());
+
+        ducati.increaseSpeed();
+        bmw.increaseSpeed();
+
+        System.out.println("Speed of the Ducati " + ducati.getSpeed());
+        System.out.println( "Speed of the BMW " + bmw.getSpeed());
        
 
         ducati.stop();
         bmw.stop();
+
+        MotorBike honda = new MotorBike(125);
+
+       System.out.println("Speed of the Honda " + honda.getSpeed());
     }
 }
