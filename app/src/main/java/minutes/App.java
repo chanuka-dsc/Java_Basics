@@ -12,8 +12,8 @@ public class App {
         ducati.start();
         bmw.start();
 
-        ducati.speed  = 100;
-        bmw.speed  = 150;
+        ducati.setSpeed(150);
+        bmw.setSpeed(160);
 
         System.out.println("Speed of the Ducati" + ducati.getSpeed());
         System.out.println( "Speed of the BMW" + bmw.getSpeed());

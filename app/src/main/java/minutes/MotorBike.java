@@ -1,7 +1,7 @@
 package minutes;
 
 public class MotorBike {
-  public int speed;
+  private int speed;
 
 
 
@@ -11,6 +11,10 @@ public class MotorBike {
 
   public void stop() {
     System.out.println("Bike stopped");
+  }
+
+  public void setSpeed(int s){
+    speed = s;
   }
 
   public int getSpeed(){
