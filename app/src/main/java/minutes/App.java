@@ -4,11 +4,22 @@
 package minutes;
 
 public class App {
-    public String getGreeting() {
-        return "Hello World!";
-    }
 
     public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+        MotorBike ducati = new MotorBike();
+        MotorBike bmw = new MotorBike();
+
+        ducati.start();
+        bmw.start();
+
+        ducati.speed  = 100;
+        bmw.speed  = 150;
+
+        System.out.println("Speed of the Ducati" + ducati.getSpeed());
+        System.out.println( "Speed of the BMW" + bmw.getSpeed());
+       
+
+        ducati.stop();
+        bmw.stop();
     }
 }
